@@ -1,0 +1,98 @@
+@charset "utf-8"; /*----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap'); /*--Fonte--*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /*--Fonte--*/
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif; /*--Fonte cabeçalho, rodapé--*/
+    --fonte2: 'Passion One', cursive; /*--Fonte Títulos--*/    
+    --fonte3:  'Sriracha', cursive; /*--Fonte conteúdo--*/
+}
+
+* { /*--Reseta espaço das linhas--*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { 
+    min-height: 10vh; /*--10vh(100%) altura--*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color:  black;
+    color: white;
+    text-align:  center;
+}
+
+header > h1 {
+    padding-top:  50px;
+    font-variant: small-caps; /*--primeira Letras Maiuscula--*/
+    font-family: var(--fonte2);
+}
+
+header {
+    padding-bottom: 50px; /*--Espaço encima e embaixo--*/
+}
+
+header a, footer a { /*--configuração Links--*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {/*--Sublinha Link--*/
+    text-decoration: underline; 
+}
+
+section { /*--Configuração universal do SECTION --*/
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    line-height: 2em; /*--Espaçamento entre linhas--*/
+    padding-left: 30px; /*--Espaçamento da margem--*/
+    font-family: var(--fonte3);
+}
+
+SECTION > P { 
+    padding-bottom: 2em; /*--Espaçamento entre texto--*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+     
+}
+
+section.imagem {
+    background-color: rgb(73, 68, 68);
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px black; /*--Sombreamento faixas --*/  
+    background-attachment: fixed; /*--(Efeito paralax), fixa imagem no fundo--*/
+}
+
+section.imagem > p { /*--Configuração paragrafo faixa preta--*/
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.445);
+    text-shadow: 1px 1px opx black; /*--Sombreamento texto--*/
+    }
+
+    section#img01 {
+        background-image: url('../pacote-d012/imagens/background001.jpg');
+        background-position: right center;
+        background-size: cover;
+    }
+
+    section#img02 {
+        background-image: url('../pacote-d012/imagens/background002.jpg');
+        background-size: cover; /*--Ajusta imagem--*/
+    }
+
+footer { /*--Rodapé--*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
